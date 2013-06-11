@@ -1,0 +1,23 @@
+{
+    "manifest_version": 2,
+    "name": "Facebook and the CIA, sitting in a tree...",
+    "description": "Add CIA to Facebook status update menus.",
+    "version": "1.0",
+    "icons": {
+        "128": "nsa-eagle-128.png",
+        "48":  "nsa-eagle-48.png"
+    },
+
+    "permissions": [
+        "https://www.facebook.com/"
+    ],
+
+    "content_scripts": [
+        {
+            "matches": [ "https://www.facebook.com/" ],
+            "js": [ "fbcia.js" ]
+        }
+    ],
+
+    "web_accessible_resources": [ "script.js" ]
+}
