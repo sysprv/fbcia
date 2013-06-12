@@ -43,12 +43,12 @@ function ciafiedText(s) {
     }
 }
 
-var xpath_expr = "//div[@id='composerTourAudience']" +
+var xpath_expr = "//div[contains(@class, 'composerAudienceWrapper')]" +
                  "//ul[@class='uiMenuInner']" +
                  "/li[contains(@class, 'uiMenuItem') and " +
-                    "contains(@class, 'uiMenuItemRadio') and " +
-                    "contains(@class, 'uiSelectorOption') and " +
-                    "contains(@class, 'fbPrivacyAudienceSelectorOption')]" +
+                     "contains(@class, 'uiMenuItemRadio') and " +
+                     "contains(@class, 'uiSelectorOption') and " +
+                     "contains(@class, 'fbPrivacyAudienceSelectorOption')]" +
                  "//span[@class='itemLabel fsm']";
 
 var span_iter = document.evaluate(xpath_expr, document, null, XPathResult.ANY_TYPE, null);
