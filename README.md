@@ -1,6 +1,6 @@
 # fbcia
 
-![] (_misc/screenshot.png)
+![Screenshot of the altered Facebook status update interface] (_misc/screenshot.png)
 
 Chrome extension to add (allegedly) funny CIA-related text to the
 visibility selection list box on the Facebook status update widget.
